@@ -28,16 +28,19 @@ Blockchain.blocks.push({
 });
 
 // TODO: insert each line into blockchain
-// for (let line of poem) {
-// }
+for (let line of poem) {
+	console.log(line);
+}
 
 // console.log(`Blockchain is valid: ${verifyChain(Blockchain)}`);
-
 
 // **********************************
 
 function blockHash(bl) {
-	return crypto.createHash("sha256").update(
+	return crypto
+		.createHash("sha256")
+		.update
 		// TODO: use block data to calculate hash
-	).digest("hex");
+		()
+		.digest("hex");
 }
